@@ -40,8 +40,12 @@ def reduce_vectors[T](vectors: List[Vector2D[T]], operation: VectorFunction[T]) 
 
 
 if __name__ == "__main__":
-    print(add(3, 4))  # Output: 7
+    vector = (3, 4)
+
+    print(add(vector))  # Output: 7
+
     result = asyncio.run(multiply(3, 4))
+
     print(result)  # Output: 12
 
     vectors: List[Vector2D[int]] = [
